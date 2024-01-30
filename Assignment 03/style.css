@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.heading img{
+    height: 70px;
+}
+section{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+section ul{
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+}
+.image-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.image-container img{
+    height: 180px;
+    width: 260px;
+}
+.sec2 button{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.menu-container{
+    align-items: center;
+    text-align: center;
+}
+.menu-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.menu-img img{
+    height: 180px;
+    width: 260px;
+}
+.contact-container{
+    margin-top: 10px;
+}
+#name{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 300px;
+}
+#email{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 300px;
+}
+#message{
+    margin-bottom: 10px;
+}
+.btn{
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+}
+.table-container {
+    border-collapse: collapse;
+    width: 300px; /* Adjust the width as needed */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+tbody{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  .table-container th,
+  .table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  .about-container{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .para{
+    font-size: 20px;
+    font-weight: 200;
+  }
