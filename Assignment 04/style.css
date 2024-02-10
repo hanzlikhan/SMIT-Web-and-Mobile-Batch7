@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 5px;
+    height: auto;
+    padding: 20px;
+    background-color: #b8b6b5;
+   margin: 20px;
+   border-radius: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    display: flex;
+}
+.logo h2{
+    padding-top: 5px;
+}
+.logo img{
+    height: 40px;
+    width: auto;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li img{
+    height: 30px;
+}
+.button {
+    padding: 5px 10px;
+    background-color: #fa6b29;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #b33000;
+}
+#home{
+    padding-top: 30px;
+}
+ .main{
+    display: flex;
+    justify-content: space-between;
+}
+.main img{
+    height: 350px;
+    width: auto;
+    
+    padding-right: 40px;
+    margin-bottom: 0;
+}
+.main h1{
+    padding-top: 60px;
+    font-size: 70px;
+    line-height: 1;
+}
+.text p{
+    padding-top: 20px;
+}
+.btn{
+    padding-top: 10px;
+}
+#Services{
+    padding-top: 30px;
+    padding: 20px
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    padding-bottom: 5px;
+}
+.card-container{
+    padding-top: 40px;
+    /* padding-left: 80px; */
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add margin between cards */
+}
+.card:hover{
+    transform: scale(1.05); 
+    border-color: #b33000;
+    box-shadow: 0px 0px 10px rgba(253, 146, 23, 0.1); 
+}
+
+.card img {
+    height: 100px;  
+    width: auto;
+}
+
+.card-text {
+    padding: 10px;
+    text-align: center;
+}
+.card-text h4{
+    color: #fa6b29;
+}
+.ser-btn{
+    text-align: center;
+}
+#Fruit{
+    margin: 40px;
+}
+.best{
+    display: flex;
+}
+.best img{
+    height: 100px;
+    width: auto;
+    padding-left: 200px;
+    padding-right: 30px;
+}
+.Fruit h4{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.but2{
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.but2:hover{
+    background-color: #3f3f3f;
+}
+.test{
+    margin: 40px;
+}
+.img{
+    padding-top: 30px;
+   text-align: center;
+}
+.para{
+    padding-top: 20px;
+    text-align: center;
+}
+#contact{
+    margin: 40px;
+}
+.contact h1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border:  none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    width: 400%;
+}
+#message{
+    padding-top: 50px;
+}
+.inp{
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex img{
+    height: 300px;
+    width: auto;
+}
+footer{
+    margin: 40px;
+}
+.footer-upper{
+    padding: 20px;
+}
+.footer-upper .footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-upper h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+  }
+  .data ul{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+  }
+  .links img{
+    height: 35px;
+    width: auto;
+  }
+  .links{
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+.kk{
+    padding-top: 10px;
+}
+.footer-lower {
+    background-color: #b8b6b5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  /* Adjustments for screens up to 768px wide */
+@media only screen and (max-width: 500px) {
+  body{
+    padding: auto;
+    margin: auto;
+  }
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul{
+        gap: 5px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    #home{
+        padding-top: 5px;
+    }
+    .main img {
+        height: auto;
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .main h1 {
+        font-size: 20px;
+    }
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .best img{
+        height: 50px;
+        width: auto;
+        padding-left: 80px;
+        padding-right: 15px;
+    }
+    .card {
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    .footer-upper h4 {
+        font-size: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+        margin-bottom: 1px;
+      }
+      .footer-upper ul{
+        font-size: 15px;
+      }
+      .footer-upper .footer-container{
+        flex-direction: column;
+    }
+    /* Add more adjustments as needed */
+}
