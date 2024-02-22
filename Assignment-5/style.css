@@ -72,7 +72,7 @@ header{
     background-color: #64FFDA;
 }
 .text{
-    margin: 15px 120px;
+    margin: 15px 160px;
     position: relative;
     z-index: 1001; /* Ensure it's on top of fixed elements */
 }
@@ -115,7 +115,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
     z-index: 1000; /* Ensure it stays on top */
 }
 
@@ -138,6 +138,9 @@ header{
     background-color: rgb(204, 214, 246);
     cursor: pointer;
 }
+.social-icons .icon:hover{
+    transform: translateY(2px);
+}
 
 /* Vertical line */
 .social-icons::after {
@@ -145,7 +148,7 @@ header{
     width: 3px;
     height: 100px;
     display: block;
-    background-color: black;
+    background-color: rgb(204, 214, 246);
     position: fixed;
     bottom: 0;
     left: 45px;
@@ -173,9 +176,20 @@ header{
     width: 2px;
     height: 100px;
     display: block;
-    background-color: black;
+    background-color: rgb(204, 214, 246);
     position: fixed;
     bottom: 0;
     right: 45px;
     z-index: 999; /* Ensure it's behind the text */
+}
+#about{
+    padding-left: 160px;
+    position: relative;
+    z-index: 1001;
+}
+#about .fl{
+    padding-left: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
