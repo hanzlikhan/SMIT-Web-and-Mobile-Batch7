@@ -318,3 +318,23 @@ header{
  .card2{
     padding-top: 50px;
  }
+ .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+ }
+ .card-container .card {
+    padding: 30px 20px;
+    text-align: center;
+    background: #022458;
+    color: rgb(204, 214, 246);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
+  }
+  .card-container .card:hover{
+        transform: scale(1.02);
+            transform: translateY(-5px);
+  }
+ .lo{
+    display: flex;
+    justify-content: space-between;
+ }
