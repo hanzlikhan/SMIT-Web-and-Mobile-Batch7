@@ -13,35 +13,35 @@ header{
     position: relative;
     z-index: 1001; /* Ensure it's on top of fixed elements */
 }
-.container{
+.contain{
     padding: 25px;
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 1001; /* Ensure it's on top of fixed elements */
 }
-.container ul{
+.contain ul{
     display: flex;
     gap: 35px;
     padding-top: 5px;
 }
-.container ul li{
+.contain ul li{
     list-style-type: decimal;
     color: #64FFDA;
 }
-.container ul li a{
+.contain ul li a{
     text-decoration: none;
 }
-.container ul li a:link{
+.contain ul li a:link{
     color:rgb(228, 228, 252);
 }
-.container ul li a:visited{
+.contain ul li a:visited{
     color:red;
 }
-.container ul li a:hover{
+.contain ul li a:hover{
     color:#64FFDA;
 }
-.container ul li a:active{
+.contain ul li a:active{
     color:rgb(216, 216, 247);
 }
 .icon img{ 
@@ -49,7 +49,7 @@ header{
     height: 50px;
     width: 50px;
 }
-.container ul .non{
+.contain ul .non{
     list-style: none;
 }
 .button{
@@ -71,11 +71,14 @@ header{
     transform: translateY(-2px); 
     background-color: #64FFDA;
 }
-.text{
-    margin: 15px 160px;
-    position: relative;
-    z-index: 1001; /* Ensure it's on top of fixed elements */
+.container{
+    margin: 20px 160px;
 }
+/* .text{
+    /* margin: 15px 160px; */
+    /* position: relative;
+    z-index: 1001; Ensure it's on top of fixed elements */
+/* } */ */
 .text div {
     padding-bottom: 5px;
 }
@@ -95,101 +98,223 @@ header{
     color: rgb(136, 146, 176)
 }
 .discript{
-    padding-top: 5px;
+    padding-top: 20px;
 }
 .discript p{
+
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: rgb(136, 146, 176)
 }
 .btt{
-    padding-top: 10px;
+    padding-top: 50px;
 }
-.social-icons-wrapper {
-    position: fixed;
-    bottom: 100px;
-    left: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* width: calc(100% - 20px); */
-    z-index: 1000; /* Ensure it stays on top */
+#About{
+    padding-top: 50px;
 }
-
-/* Social icons */
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-}
-
-.social-icons .icon {
-    width: 30px;
-    height: 30px;
-    background-size: cover;
+#About h1{
     color: rgb(204, 214, 246);
-    margin-bottom: 10px;
-    border: 2px solid rgb(204, 214, 246);
-    border-radius: 50%;
-    background-color: rgb(204, 214, 246);
-    cursor: pointer;
+    font-size: 32px;
+    font-weight: 600;
 }
-.social-icons .icon:hover{
-    transform: translateY(2px);
-}
-
-/* Vertical line */
-.social-icons::after {
-    content: '';
-    width: 3px;
-    height: 100px;
-    display: block;
-    background-color: rgb(204, 214, 246);
-    position: fixed;
-    bottom: 0;
-    left: 45px;
-    z-index: 999; /* Ensure it's behind the icons */
-}
-
-/* Vertical text */
-.vertical-text {
-    position: fixed;
-    writing-mode: vertical-lr;
-    color: black;
-    right: 35px;
-    bottom: 120px;
-    z-index: 1000; /* Ensure it's on top */
-}
-
-.vertical-text p {
-    position: relative;
-    font-size: 16px; /* Set to relative or static */
-    color: rgb(204, 214, 246);
-}
-
-.vertical-text::after {
-    content: '';
-    width: 2px;
-    height: 100px;
-    display: block;
-    background-color: rgb(204, 214, 246);
-    position: fixed;
-    bottom: 0;
-    right: 45px;
-    z-index: 999; /* Ensure it's behind the text */
-}
-#about{
-    padding-left: 160px;
-    position: relative;
-    z-index: 1001;
-}
-#about .fl{
-    padding-left: 160px;
+#About .line{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
+.hor{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    right: 250px;
+    margin-top: 18px;
+}
+.paras{
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(136, 146, 176);
+    display: flex;
+}
+.paras .pa p{
+    padding-top: 15px;
+}
+.image{
+   
+        display: inline-block; /* Ensure the container takes only as much space as necessary */
+        border: 2px solid #ccc; /* Add a solid border with a color of your choice */
+        border-radius: 10px; /* Add rounded corners for a softer look */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        overflow: hidden; /* Ensure the image doesn't protrude out of the container */
+       
+     margin-left: 10px;
+}
+.image img{
+    height: 360px;
+    width: 250px;
+    display: block;
+    
+}
+.image img:hover{
+    transform: scale(1.02);
+    transition: ease-in-out(0.3s);
+}
+.image{
+    transform: scale(1.0);
+}
+.lists{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(136, 146, 176);
+}
+.li1{
+    display:inline-block;
+}
+.li1 li{
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+.li1 li::before{
+    content: "\21D2"; 
+    color: #64FFDA;
+    margin-right: 5px; 
+}
+.li2{
+    padding-left: 100px;
+    display: inline-block;
+}
+.li2 li::before{
+    content: "\21D2"; 
+    color: #64FFDA;
+    margin-right: 5px; 
+}
+.li2 li{
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+#Work{
+    padding-top: 50px;
+}
+#work.lines{
+    display: flex;
+    justify-content: space-between;
+}
+.lines .hor{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    right: 250px;
+}
+
+.navbox{
+    padding-top: 20px;
+}
+.vertical-menu {
+    display: inline-block;
+    padding-top: 20px;
+    width: 120px;
+    height: 150px;
+    overflow-y: auto;
+    direction: rtl; /* Set text direction to right-to-left */
+  }
+  
+  .vertical-menu::-webkit-scrollbar {
+    width: 5px; /* Set width of the scrollbar */
+    height: 5px; /* Set height of the scrollbar */
+  }
+  
+  .vertical-menu::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set color of the scrollbar thumb */
+    border-radius: 5px; /* Set border radius of the thumb */
+  }
+  
+  .vertical-menu::-webkit-scrollbar-track {
+    background-color: #eee; /* Set color of the scrollbar track */
+  }
+  
+  .vertical-menu a {
+    background-color: #0a192f;
+    color: rgb(136, 146, 176);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    color: #64FFDA;
+    background-color: #5a5a5a;
+  }
+  
+  .vertical-menu a:active {
+    background-color: rgb(136, 146, 176);
+    color: white;
+  }
+ .navbox{
+    display: flex;
+ }
+ #SMIT{
+    padding-left: 60px;
+ }
+ .paa{
+    padding-bottom: 10px;
+    color: rgb(136, 146, 176);
+ }
+ .paa::before{
+    content: "\21D2"; 
+    color: #64FFDA;
+    margin-right: 5px; 
+ }
+ #SMIT a{
+    color: #64FFDA;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 40px;
+ }
+ #SMIT a:hover{
+    text-decoration: underline;
+ }
+ #Experience{
+    margin-top: 50px;
+ }
+ .pic img{
+   height: 250px;
+   width: 500px;
+   position: absolute;
+   right: 180px;
+ }
+
+ .box{
+     height: auto;
+     padding: 15px;
+    width: 500px;
+    position: relative;
+    font-size: 20px;
+    line-height: 2.cap;
+    color: rgb(204, 214, 246);
+ }
+ .pic img:hover{
+    z-index: 0;
+ }
+ .pic2 img{
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    left: 180px;  
+ }
+ .box2{
+    height: auto;
+    padding: 15px;
+    float: right;
+    width: 500px;
+    position: relative;
+    font-size: 20px;
+    line-height: 2.cap;
+    color: rgb(204, 214, 246);
+ }
+ .txt{
+    padding-left: 550px;
+ }
+ .card2{
+    padding-top: 50px;
+ }
