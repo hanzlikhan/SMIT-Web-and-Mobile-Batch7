@@ -207,54 +207,75 @@ header{
     right: 250px;
 }
 
-.navbox{
-    padding-top: 20px;
-}
 .vertical-menu {
-    display: inline-block;
-    padding-top: 20px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     width: 120px;
     height: 150px;
     overflow-y: auto;
     direction: rtl; /* Set text direction to right-to-left */
-  }
-  
-  .vertical-menu::-webkit-scrollbar {
-    width: 5px; /* Set width of the scrollbar */
-    height: 5px; /* Set height of the scrollbar */
-  }
-  
-  .vertical-menu::-webkit-scrollbar-thumb {
-    background-color: #888; /* Set color of the scrollbar thumb */
-    border-radius: 5px; /* Set border radius of the thumb */
-  }
-  
-  .vertical-menu::-webkit-scrollbar-track {
-    background-color: #eee; /* Set color of the scrollbar track */
-  }
-  
-  .vertical-menu a {
+    position: relative; /* Required for scrollbar customization */
+}
+
+/* Customize the scrollbar */
+.vertical-menu::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+    height: 100%; /* Height of the scrollbar */
+    position: absolute; /* Position the scrollbar */
+    top: 0; /* Align the scrollbar to the top */
+    right: 0; /* Align the scrollbar to the right */
+}
+
+/* Customize the scrollbar thumb */
+.vertical-menu::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+.vertical-menu::-webkit-scrollbar-thumb:hover{
+    background-color: #64FFDA;
+}
+
+/* Customize the scrollbar track */
+.vertical-menu::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide the track */
+}
+
+/* Customize the scrollbar corner */
+.vertical-menu::-webkit-scrollbar-corner {
+    background-color: transparent; /* Hide the corner */
+}
+
+/* Add hover effect to list items */
+.vertical-menu:hover {
+    background-color: #5a5a5a; /* Change background color on hover */
+}
+
+/* List item styles */
+.vertical-menu a {
     background-color: #0a192f;
     color: rgb(136, 146, 176);
     display: block;
-    padding: 12px;
+    padding: 20px;
+    padding-right: 10px;
     text-decoration: none;
-  }
-  
-  .vertical-menu a:hover {
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+/* Hover effect for list items */
+.vertical-menu a:hover {
     color: #64FFDA;
     background-color: #5a5a5a;
-  }
-  
-  .vertical-menu a:active {
-    background-color: rgb(136, 146, 176);
-    color: white;
-  }
- .navbox{
+}
+.navbox{
     display: flex;
- }
+}
+
  #SMIT{
-    padding-left: 60px;
+    margin-top: 40px;
+    padding-left: 100px;
  }
  .paa{
     padding-bottom: 10px;
@@ -265,13 +286,13 @@ header{
     color: #64FFDA;
     margin-right: 5px; 
  }
- #SMIT a{
+ #disp a{
     color: #64FFDA;
     font-size: 20px;
     text-decoration: none;
     padding-left: 40px;
  }
- #SMIT a:hover{
+ #disp a:hover{
     text-decoration: underline;
  }
  #Experience{
@@ -282,6 +303,7 @@ header{
    width: 500px;
    position: absolute;
    right: 180px;
+   /* z-index: 1; */
  }
 
  .box{
@@ -292,9 +314,6 @@ header{
     font-size: 20px;
     line-height: 2.cap;
     color: rgb(204, 214, 246);
- }
- .pic img:hover{
-    z-index: 0;
  }
  .pic2 img{
     height: 200px;
@@ -338,3 +357,71 @@ header{
     display: flex;
     justify-content: space-between;
  }
+ .social-icons{
+    position: fixed;
+    top: 300px;
+    left: 30px; 
+   }
+   .social-icons img{
+     height: 40px;
+     width: auto;
+     cursor: pointer;
+   }
+   .social-icons .vertical-line{
+     width: 3px;
+     background-color: black;
+     height: 100px;
+     margin-left: 20px;
+   }
+ .social-icons img:hover{
+    transform: translateY(-2px); 
+ }
+ .social-icons .vertical-line{
+    width: 3px;
+  background-color: rgb(204, 214, 246);
+  height: 150px;
+  margin-left: 20px;
+ }
+ .vertical-text{
+    font-size: 20px;
+    color: rgb(204, 214, 246);
+    transform: rotate(90deg);
+    position: fixed;
+    left: 1015px;
+    top: 350px;
+ }
+ .vert{
+    width: 3px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: rgb(204, 214, 246);
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+ }
+ .content-section {
+    display: none; /* Hide all content sections by default */
+  }
+  #SMIT {
+    display: block; /* Show the content of the first section by default */
+  }
+  .blogs a{
+        text-decoration: none;
+  }
+  .blogs a:hover{
+    text-decoration: underline;
+    color: #64FFDA;
+  }
+  .card2-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+  }
+  .card2-container.card2{
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #4c4c4c;
+    color: rgb(204, 214, 246);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  }
