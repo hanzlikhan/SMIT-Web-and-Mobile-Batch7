@@ -36,7 +36,7 @@ header{
     color:rgb(228, 228, 252);
 }
 .contain ul li a:visited{
-    color:red;
+    color:green;
 }
 .contain ul li a:hover{
     color:#64FFDA;
@@ -298,13 +298,35 @@ header{
  #Experience{
     margin-top: 50px;
  }
- .pic img{
+ .image1-container img{
    height: 250px;
    width: 500px;
    position: absolute;
    right: 180px;
    /* z-index: 1; */
  }
+ .image1-container:hover img {
+     transform: scale(1.1); 
+}
+.image2-container:hover img {
+    transform: scale(1.1); 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.7); /* Green color with opacity */
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.image-container:hover .overlay {
+    opacity: 0.5;
+}
+
 
  .box{
      height: auto;
@@ -315,7 +337,7 @@ header{
     line-height: 2.cap;
     color: rgb(204, 214, 246);
  }
- .pic2 img{
+ .image2-container img{
     height: 200px;
     width: 500px;
     position: absolute;
@@ -337,21 +359,40 @@ header{
  .card2{
     padding-top: 50px;
  }
- .card-container{
+ .show-card{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     gap: 15px;
  }
- .card-container .card {
+ .show-card .card {
     padding: 30px 20px;
     text-align: center;
     background: #022458;
     color: rgb(204, 214, 246);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
   }
-  .card-container .card:hover{
+  .show-card .card:hover{
         transform: scale(1.02);
             transform: translateY(-5px);
+  }
+  .hidden-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+ }
+ .hidden-cards .card {
+    padding: 30px 20px;
+    text-align: center;
+    background: #022458;
+    color: rgb(204, 214, 246);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
+  }
+  .hidden-cards.card:hover{
+        transform: scale(1.02);
+            transform: translateY(-5px);
+  }
+ .hidden-cards{
+    display: block;
   }
  .lo{
     display: flex;
@@ -412,16 +453,43 @@ header{
     text-decoration: underline;
     color: #64FFDA;
   }
-  .card2-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 15px;
+  .card3 img{
+    height: 30px;
   }
-  .card2-container.card2{
-    padding: 30px 20px;
-    text-align: center;
-    background-color: #4c4c4c;
-    color: rgb(204, 214, 246);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.card3-container{
+    margin-top: 80px;
+}
+  .card3 {
+    background-color: #0a192f; /* Default background color */
+    border-radius: 8px;
+    padding: 10px;
+    height: 150px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    cursor: pointer;
+}
+.card3:hover{
+    transform: translateY(-5px);
+}
+/* You can assign different background colors to each card by targeting them individually */
 
-  }
+.card3 {
+       background-color: #5a5a5a;
+}
+
+.card3 img{
+    background-color: #5a5a5a;
+}
+.card3 h3{
+    padding-top: 20px;
+    background-color: #5a5a5a;
+}
+.di{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5a5a5a;
+}
+.di div{
+    background-color: #5a5a5a;
+}
+
