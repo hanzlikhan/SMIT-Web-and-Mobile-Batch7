@@ -1,0 +1,21 @@
+.button-section{
+    margin-top: 5rem;
+}
+.btnn{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1.0rem 2.0rem; /* Increase padding for better aesthetics */
+    color: #64FFDA; /* Change text color to white for better contrast */
+    /* background-color: #64FFDA; Background color */
+    border: 0.2rem solid #64FFDA; /* Add border for better visibility */
+    border-radius: 0.5rem; /* Increase border radius for a rounded look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Add transition for smoother effects */
+    box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+.btnn:hover{
+    color: #0a192f;
+transform: translateY(-0.2rem); 
+background-color: #64FFDA;
+}

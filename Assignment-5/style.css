@@ -1,121 +1,185 @@
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+   overflow-x:hidden;
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: #0a192f;
+    font-size: 2rem;
 }
-header{
-    border-bottom: #0a192f;
-    box-shadow: #0a192f;
-    position: relative;
-    z-index: 1001; /* Ensure it's on top of fixed elements */
+#main-header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #fff; /* Set your desired background color */
+    z-index: 1000; /* Ensure the header is above other elements */
+    transition: top 0.3s;
+    border: 1px solid #64FFDA;
+    border-radius: 1rem;
+}
+#main-header.hidden {
+    top: -100px; /* Move header above the viewport */
+  }
+
+.nu{
+    color: #64FFDA;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pa p span{
+    color: #64FFDA;
+}
+.aq{
+    color: #64FFDA;
+}
+.aq:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.wh{
+    color: rgb(136, 146, 176);
+    font-size: 1.8rem;
 }
 .contain{
-    padding: 25px;
+    padding: 2.5rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     z-index: 1001; /* Ensure it's on top of fixed elements */
 }
 .contain ul{
     display: flex;
-    gap: 35px;
-    padding-top: 5px;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    padding-top: 1rem;
 }
 .contain ul li{
     list-style-type: decimal;
     color: #64FFDA;
 }
 .contain ul li a{
+    font-size: 2.5rem;
     text-decoration: none;
 }
 .contain ul li a:link{
     color:rgb(228, 228, 252);
 }
 .contain ul li a:visited{
-    color:green;
+    color:white;
 }
 .contain ul li a:hover{
     color:#64FFDA;
+    text-decoration: underline;
+}
+.aq:hover{
+    text-decoration: underline;
 }
 .contain ul li a:active{
     color:rgb(216, 216, 247);
 }
 .icon img{ 
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 5.0rem;
+    width: 5.0rem;
 }
 .contain ul .non{
     list-style: none;
 }
 .button{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
-    padding: 10px 20px; /* Increase padding for better aesthetics */
+    padding: 1.0rem 2.0rem; /* Increase padding for better aesthetics */
     color: #64FFDA; /* Change text color to white for better contrast */
     /* background-color: #64FFDA; Background color */
-    border: 2px solid #64FFDA; /* Add border for better visibility */
-    border-radius: 5px; /* Increase border radius for a rounded look */
+    border: 0.2rem solid #64FFDA; /* Add border for better visibility */
+    border-radius: 0.5rem; /* Increase border radius for a rounded look */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Add transition for smoother effects */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .button:hover{
     color: #0a192f;
-    transform: translateY(-2px); 
+    transform: translateY(-0.2rem); 
     background-color: #64FFDA;
 }
 .container{
-    margin: 20px 160px;
+    margin: 15rem 25rem;
 }
 /* .text{
-    /* margin: 15px 160px; */
+    /* margin: 15rem 160rem; */
     /* position: relative;
     z-index: 1001; Ensure it's on top of fixed elements */
 /* } */ */
 .text div {
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
 }
 .big h1{
-    Font-size: 70px;
+    Font-size: 7.0rem;
     Font-weight: 600;
     color: rgb(204, 214, 246)
 }
 .gre{
-    padding-left: 10px;
-    font-size: 20px;
+    padding-left: 1.0rem;
+    font-size: 2.0rem;
     color: #64FFDA;
 }
 .dis{
-    font-size: 50px;
+    font-size: 5.0rem;
     font-weight: 600;
     color: rgb(136, 146, 176)
 }
 .discript{
-    padding-top: 20px;
+    padding-top: 2.0rem;
 }
 .discript p{
 
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 2.8rem;
     color: rgb(136, 146, 176)
 }
 .btt{
-    padding-top: 50px;
+    padding-top: 5.0rem;
+}
+.butt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1.0rem 2.0rem; /* Increase padding for better aesthetics */
+    color: #64FFDA; /* Change text color to white for better contrast */
+    /* background-color: #64FFDA; Background color */
+    border: 0.2rem solid #64FFDA; /* Add border for better visibility */
+    border-radius: 0.5rem; /* Increase border radius for a rounded look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Add transition for smoother effects */
+    box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1); 
+}
+.butt:hover{
+    color: #0a192f !important;
+    transform: translateY(-0.2rem) !important; 
+    background-color: #64FFDA !important;
+}
+#About button:hover{
+    color: #0a192f;
+    transform: translateY(-0.2rem); 
+    background-color: #64FFDA;
 }
 #About{
-    padding-top: 50px;
+    padding-top: 5.0rem;
 }
 #About h1{
     color: rgb(204, 214, 246);
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 #About .line{
@@ -125,34 +189,37 @@ header{
 .hor{
     position: absolute;
     z-index: 1;
-    width: 300px;
-    right: 250px;
-    margin-top: 18px;
+    width: 30.0rem;
+    right: 25.0rem;
+    margin-top: 1.8rem;
 }
 .paras{
-    padding-top: 50px;
-    font-size: 18px;
+    padding-top: 5.0rem;
+    font-size: 1.8rem;
     font-weight: 300;
     color: rgb(136, 146, 176);
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .paras .pa p{
-    padding-top: 15px;
+    padding-top: 0.5rem;
 }
 .image{
    
         display: inline-block; /* Ensure the container takes only as much space as necessary */
-        border: 2px solid #ccc; /* Add a solid border with a color of your choice */
-        border-radius: 10px; /* Add rounded corners for a softer look */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        border: 0.2rem solid #ccc; /* Add a solid border with a color of your choice */
+        border-radius: 1.0rem; /* Add rounded corners for a softer look */
+        box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
         overflow: hidden; /* Ensure the image doesn't protrude out of the container */
        
-     margin-left: 10px;
+     margin-left: 1.0rem;
 }
 .image img{
-    height: 360px;
-    width: 250px;
+    height: 36.0rem;
+    width: 25.0rem;
     display: block;
+    position: sticky;
     
 }
 .image img:hover{
@@ -163,8 +230,8 @@ header{
     transform: scale(1.0);
 }
 .lists{
-    padding-top: 20px;
-    font-size: 16px;
+    padding-top: 2.0rem;
+    font-size: 2rem;
     font-weight: 400;
     color: rgb(136, 146, 176);
 }
@@ -172,29 +239,29 @@ header{
     display:inline-block;
 }
 .li1 li{
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     list-style-type: none;
 }
 .li1 li::before{
     content: "\21D2"; 
     color: #64FFDA;
-    margin-right: 5px; 
+    margin-right: 0.5rem; 
 }
 .li2{
-    padding-left: 100px;
+    padding-left: 10.0rem;
     display: inline-block;
 }
 .li2 li::before{
     content: "\21D2"; 
     color: #64FFDA;
-    margin-right: 5px; 
+    margin-right: 0.5rem; 
 }
 .li2 li{
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     list-style-type: none;
 }
 #Work{
-    padding-top: 50px;
+    padding-top: 5.0rem;
 }
 #work.lines{
     display: flex;
@@ -203,18 +270,18 @@ header{
 .lines .hor{
     position: absolute;
     z-index: 1;
-    width: 300px;
-    right: 250px;
+    width: 30.0rem;
+    right: 25.0rem;
 }
 
 .vertical-menu {
     display: flex;
-    margin-top: 40px;
+    margin-top: 4.0rem;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    width: 120px;
-    height: 150px;
+    padding: 2.0rem;
+    width: 12.0rem;
+    height: 15.0rem;
     overflow-y: auto;
     direction: rtl; /* Set text direction to right-to-left */
     position: relative; /* Required for scrollbar customization */
@@ -222,7 +289,7 @@ header{
 
 /* Customize the scrollbar */
 .vertical-menu::-webkit-scrollbar {
-    width: 3px; /* Width of the scrollbar */
+    width: 0.3rem; /* Width of the scrollbar */
     height: 100%; /* Height of the scrollbar */
     position: absolute; /* Position the scrollbar */
     top: 0; /* Align the scrollbar to the top */
@@ -232,7 +299,7 @@ header{
 /* Customize the scrollbar thumb */
 .vertical-menu::-webkit-scrollbar-thumb {
     background-color: #888;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 .vertical-menu::-webkit-scrollbar-thumb:hover{
     background-color: #64FFDA;
@@ -250,7 +317,7 @@ header{
 
 /* Add hover effect to list items */
 .vertical-menu:hover {
-    background-color: #5a5a5a; /* Change background color on hover */
+    background-color:#0a192f; /* Change background color on hover */
 }
 
 /* List item styles */
@@ -258,8 +325,9 @@ header{
     background-color: #0a192f;
     color: rgb(136, 146, 176);
     display: block;
-    padding: 20px;
-    padding-right: 10px;
+    font-size: 1.5rem;
+    padding: 1.0rem;
+    padding-right: 1.0rem;
     text-decoration: none;
     transition: background-color 0.3s; /* Add transition effect */
 }
@@ -272,44 +340,59 @@ header{
 .navbox{
     display: flex;
 }
-
- #SMIT{
-    margin-top: 40px;
-    padding-left: 100px;
- }
  .paa{
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
     color: rgb(136, 146, 176);
  }
  .paa::before{
     content: "\21D2"; 
     color: #64FFDA;
-    margin-right: 5px; 
+    margin-right: 0.5rem; 
+ }
+ #disp{
+    font-size: 2rem;
+    margin-top: 4.0rem;
+    padding-left: 10.0rem;
  }
  #disp a{
     color: #64FFDA;
-    font-size: 20px;
+    font-size: 2.0rem;
     text-decoration: none;
-    padding-left: 40px;
+    padding-left: 4.0rem;
  }
  #disp a:hover{
     text-decoration: underline;
  }
  #Experience{
-    margin-top: 50px;
+    margin-top: 5.0rem;
  }
  .image1-container img{
-   height: 250px;
-   width: 500px;
+   height: 25.0rem;
+   width: 50.0rem;
    position: absolute;
-   right: 180px;
-   /* z-index: 1; */
+   right: 18.0rem;
+   opacity: 0.5;
+   border: 1px solid;
+ }
+ .image1-container{
+    margin-top: 5rem;
+ }
+ .image2-container{
+    margin-top: 10rem;
+ }
+ .write i{
+    color: rgb(204, 214, 246); padding-left: 2rem;font-size: 2rem;
+ }
+ .write i:hover{
+    color: #64FFDA;
  }
  .image1-container:hover img {
+    opacity: 1;
      transform: scale(1.1); 
 }
 .image2-container:hover img {
     transform: scale(1.1); 
+    opacity: 1;
 }
 .overlay {
     position: absolute;
@@ -326,70 +409,117 @@ header{
 .image-container:hover .overlay {
     opacity: 0.5;
 }
-
-
+.image2-container img{
+    height: 30.0rem; width: 55.0rem;
+}
+.dat{
+    color: rgb(136, 146, 176);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.tec{
+    font-size: 1.8rem;
+    color: rgb(136, 146, 176);
+}
+.write{
+    margin: 4.0rem;
+     padding-top: 1.0rem;
+}
+.fe{
+    color: #64FFDA; font-size: 2.0rem;
+}
+.ai{
+    color: white; 
+    padding-bottom: 2rem;
+}
+.ht{
+    color: rgb(204, 214, 246);
+    padding-bottom: 1rem; 
+    font-size: 1.5rem;
+}
  .box{
      height: auto;
-     padding: 15px;
-    width: 500px;
+     padding: 1.5rem;
+     left: 9rem;
+    width: 50.0rem;
     position: relative;
-    font-size: 20px;
+    font-size: 2.0rem;
     line-height: 2.cap;
     color: rgb(204, 214, 246);
+    border: #0a192f 1px solid;
+    background-color: #0a192f;
  }
  .image2-container img{
-    height: 200px;
-    width: 500px;
+    height: 20.0rem;
+    width: 50.0rem;
     position: absolute;
-    left: 180px;  
+    left: 18.0rem;  
+    opacity: 0.5;
  }
  .box2{
+    right: 15rem;
     height: auto;
-    padding: 15px;
+    padding: 1.5rem;
     float: right;
-    width: 500px;
+    width: 50.0rem;
     position: relative;
-    font-size: 20px;
+    border: #0a192f 1px solid;
+    background-color: #0a192f;
+    font-size: 2.0rem;
     line-height: 2.cap;
     color: rgb(204, 214, 246);
  }
+ .flo{
+    margin-top: 12rem;
+    left: 80rem;
+    position: relative;
+ }
+ .flo i{
+    color: rgb(204, 214, 246);
+    font-size: 2rem;
+ }
  .txt{
-    padding-left: 550px;
+    padding-left: 55.0rem;
+ }
+ .txt i{
+    color: rgb(204, 214, 246);
+    font-size: 2rem;
  }
  .card2{
-    padding-top: 50px;
+    padding-top: 5.0rem;
  }
  .show-card{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(27.0rem,1fr));
+    gap: 1.5rem;
  }
  .show-card .card {
-    padding: 30px 20px;
+    padding: 3.0rem 2.0rem;
     text-align: center;
     background: #022458;
     color: rgb(204, 214, 246);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
+    box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
   }
   .show-card .card:hover{
         transform: scale(1.02);
-            transform: translateY(-5px);
+            transform: translateY(-0.5rem);
   }
   .hidden-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(27.0rem,1fr));
+    gap: 1.5rem;
  }
  .hidden-cards .card {
-    padding: 30px 20px;
+    padding: 3.0rem 2.0rem;
     text-align: center;
     background: #022458;
     color: rgb(204, 214, 246);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
+    box-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.3); /* Adding a box shadow for depth effect */
   }
   .hidden-cards.card:hover{
         transform: scale(1.02);
-            transform: translateY(-5px);
+        box-shadow: #64FFDA;
+            transform: translateY(-5rem);
   }
  .hidden-cards{
     display: block;
@@ -400,45 +530,56 @@ header{
  }
  .social-icons{
     position: fixed;
-    top: 300px;
-    left: 30px; 
+    top: 39.0rem;
+    left: 3.0rem; 
    }
-   .social-icons img{
-     height: 40px;
-     width: auto;
+   .social-icons i{
+    margin-left: 1rem;
+     font-size: 2rem;
+     color: rgb(204, 214, 246);
      cursor: pointer;
    }
-   .social-icons .vertical-line{
-     width: 3px;
-     background-color: black;
-     height: 100px;
-     margin-left: 20px;
+   .social-icons i svg{
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: rgb(204, 214, 246);
+    cursor: pointer;
    }
- .social-icons img:hover{
-    transform: translateY(-2px); 
+ .social-icons i:hover{
+    transform: translateY(-1rem); 
+    color: #64FFDA;
+ }
+ .social-icons i svg:hover{
+    transform: translateY(-1rem); 
+    color: #64FFDA;
+    fill: #64FFDA;
  }
  .social-icons .vertical-line{
-    width: 3px;
+    width: 0.3rem;
   background-color: rgb(204, 214, 246);
-  height: 150px;
-  margin-left: 20px;
+  height: 15.0rem;
+  bottom: 0;
+  margin-left: 2.0rem;
+ }
+ .lo i{
+    font-size: 2rem;
  }
  .vertical-text{
-    font-size: 20px;
+    font-size: 2.0rem;
     color: rgb(204, 214, 246);
     transform: rotate(90deg);
     position: fixed;
-    left: 1015px;
-    top: 350px;
+    bottom: 20.0rem;
+    right: -4rem;
  }
  .vert{
-    width: 3px;
-    height: 100px;
-    margin-right: 20px;
+    width: .3rem;
+    height: 10.0rem;
+    margin-right: 2.0rem;
     background-color: rgb(204, 214, 246);
     position: fixed;
     bottom: 0;
-    right: 30px;
+    right: 3.0rem;
  }
  .content-section {
     display: none; /* Hide all content sections by default */
@@ -454,37 +595,50 @@ header{
     color: #64FFDA;
   }
   .card3 img{
-    height: 30px;
+    height: 3.0rem;
   }
 .card3-container{
-    margin-top: 80px;
+    margin-top: 8.0rem;
 }
   .card3 {
     background-color: #0a192f; /* Default background color */
-    border-radius: 8px;
-    padding: 10px;
-    height: 150px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    border-radius: 0.8rem;
+    padding: 1.0rem;
+    height: 15.0rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
     cursor: pointer;
 }
 .card3:hover{
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 10px blue;
+}
+.lo i{
+    color: rgb(204, 214, 246);
+}
+.lo i:hover{
+    color: #64FFDA;
+    cursor: pointer;
 }
 /* You can assign different background colors to each card by targeting them individually */
 
 .card3 {
        background-color: #5a5a5a;
 }
-
+.projects h1{
+    text-align: center; color: rgb(204, 214, 246);
+}
+.wht{
+    color: #64FFDA;font-size: 2.0rem;text-align: center; 
+}
 .card3 img{
     background-color: #5a5a5a;
 }
 .card3 h3{
-    padding-top: 20px;
+    padding-top: 2.0rem;
     background-color: #5a5a5a;
 }
 .di{
-    padding-top: 30px;
+    padding-top: 3.0rem;
     display: flex;
     justify-content: space-between;
     background-color: #5a5a5a;
@@ -493,3 +647,66 @@ header{
     background-color: #5a5a5a;
 }
 
+.container-life{
+    margin: 5.0rem 18.33vw;
+}
+
+.vil img{
+    height: 45.0rem;
+    width: 58.33vw;
+}
+
+@media screen and (max-width:1023px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        margin: 1.5rem 12rem;
+    }
+   
+}
+@media screen and (max-width:800px){
+    html{
+        font-size: 45%;
+    }
+    .container{
+        margin: 1rem 8rem;
+    }
+    .exp-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .show-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hidden-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 35%;
+    }
+    .container{
+        margin: 0.3rem;
+    }
+    .exp-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .show-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hidden-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .social-icons{
+        display: none;
+    }
+}
