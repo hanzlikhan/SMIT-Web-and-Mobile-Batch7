@@ -1,12 +1,9 @@
 function showContent(id) {
-    // Hide all content sections
     var sections = document.getElementsByClassName("content-section");
     for (var i = 0; i < sections.length; i++) {
         sections[i].style.display = "none";
     }
-    // Show the selected content section
     document.getElementById(id).style.display = "block";
-    // Update active link
     var links = document.getElementsByClassName("active");
     for (var i = 0; i < links.length; i++) {
         links[i].classList.remove("active");
@@ -42,13 +39,13 @@ image.addEventListener("mouseleave", function() {
     this.src = "./Assets/AIPodcasteGenerator.cf943fff109f713cc4d2.png"; // Replace 'original-image.jpg' with the path to your original image
 });
 
-function showContent() {
+function head() {
     document.getElementById("full_page").style.display = "block";
     document.querySelector('.preloader').style.display = "none";
   }
   
   // Event listener to call showContent function after 5 seconds
-  setTimeout(showContent, 2000);
+  setTimeout(head, 2000);
 
   var lastScrollTop = 0;
 
