@@ -355,6 +355,43 @@ ul a{
  width: auto;   
 }
 .foot-4{
-    height: 380px;
+    height: 430px;
     background-color: #131a22;
+}
+.lists{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.lists u{
+    width: 120px;
+}
+.lists u p{
+    color: white;
+    font-size: 16px;
+
+}
+.lists u a{
+   color: #999999;
+   font-size: 12px;
+}
+.foot-5{
+    background-color: #131a22;
+    color: white;
+    height: 100px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.pages{
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+    font-size: 0.75rem;
+    text-align: center;
 }
