@@ -1,0 +1,8 @@
+{
+   "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "vite": "^5.1.5"
+  }
+}
