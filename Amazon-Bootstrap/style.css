@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+}
+.navbar{
+    height: 60px;
+    background-color: #131921;
+}
+
+
+.bord1{
+    height: 55px;
+    width: auto;
+    border: 1px solid transparent;
+}
+.bord1:hover{
+    border: 1px solid white;
+}
+.nav-1{
+    height: 60px;
+    width: 100%;
+}
+.box-3{
+    width: 650px;
+    height: 55px;
+    border: 1px solid transparent;
+}
+.box-3:hover{
+    border: 1px solid #f3a847;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.f-sel{
+    width: 60px;
+    height: 50px;
+    border: none;
+    border-right: 1px solid rgb(237, 236, 236);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.inp{
+    height: 50px;
+    width: 540px;
+    border: none;
+}
+.s-icon{
+    height: 50px;
+    color: black;
+    width: 60px;
+    background-color: #f3a847;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.lng-box{
+    height: 40px;
+    width: auto;
+    border: 1px solid transparent;
+}
+.lng-box:hover{
+    border: 1px solid white;
+}
+.lng{
+    height: 20px;
+    width: auto;
+    border: none;
+}
+.opt{
+    background-color: #131921;
+    border: none;
+}
+.box-5{
+    height: 55px;
+    border: 1px solid transparent;
+}
+.box-5:hover{
+    border:1px solid white;
+}
+.box-6{
+    height: 55px;
+    border: 1px solid transparent;
+}
+.box-6:hover{
+    border: 1px solid white;
+}
+.box-7{
+    height: 55px;
+    border: 1px solid transparent;
+}
+.box-7:hover{
+    border: 1px solid white;
+}
+.nav2{
+    background-color: #232f3e !important;
+    height: 40px;
+}
+.bor{
+    border: 1px solid transparent;
+   
+}
+.bor:hover{
+    border: 1px solid white;
+}
