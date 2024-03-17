@@ -72,3 +72,63 @@
 .navbar-collapse > div:hover {
     border-color: white; /* Change border color on hover */
 }
+
+.card{
+    height: 350px;
+    width: 18.0rem;
+}
+.img{
+    height: 100px;
+    width: 12.0rem;
+}
+.one-im{
+    height: 250px;
+    width: auto;
+}
+.main-sec{
+    width: 100vw;
+
+}
+.img-sec{
+   background-image: linear-gradient(to bottom,transparent,#e1e6e3 30%);
+}
+.img-sec img{
+    width: 100vw;
+}
+.card-section{
+    top: 40%;
+    width: 100%;
+    border: 0px;
+    background-color: transparent;
+  /* From https://css.glass */
+
+
+
+    /* background-color: ; */
+    /* background-image: linear-gradient(); */
+}
+.mid-sec{
+    height: 350px;
+    background-color: #131921;
+   
+    top: 40%;
+}
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .navbar .dropdown-toggle span {
+    margin-right: 10px;
+  }
+  .dropdown:hover .dropdown-toggle .dropdown-corner {
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 0.25rem; /* Border radius */
+  }
