@@ -113,22 +113,15 @@
    
     top: 40%;
 }
-.navbar .dropdown:hover .dropdown-menu {
+.btn-group:hover .dropdown-menu {
     display: block;
   }
-  .navbar .dropdown-menu {
-    left: 50%;
-    transform: translateX(-50%);
+  /* Hide the dropdown when hovering on the button */
+  .btn-group:hover .dropdown-toggle {
+    background-color: transparent;
+    color: #212529;
   }
-  .navbar .dropdown-toggle {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  .navbar .dropdown-toggle span {
-    margin-right: 10px;
-  }
-  .dropdown:hover .dropdown-toggle .dropdown-corner {
-    border: 1px solid #ced4da; /* Border color */
-    border-radius: 0.25rem; /* Border radius */
+  /* Set proper z-index to make sure dropdowns are on top of other elements */
+  .dropdown-menu {
+    z-index: 9999;
   }
