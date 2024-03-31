@@ -1,0 +1,107 @@
+.navbar1{
+    background-color: #2A2E30;
+}
+.navbar2{
+    background-color: #3A3F42;
+    max-height: auto;
+}
+input{
+    max-height: 55px;
+     background-color:white;
+      border: 1px solid white;
+       width: 23rem;
+}
+/* hero img */
+.main{ 
+    background-color: #DCDAD7;
+}
+
+.nav-link{
+    color: white;
+}
+/* cards */
+
+.card-body a{
+    color: #386395;
+    text-decoration: none;
+}
+.card-body a:hover{
+    color: #A3605B;
+    text-decoration: underline;
+}
+.col p{
+    font-size: 14px;
+}
+.wrapper-imgs{
+    padding-top: 2rem;
+}
+.overflow-auto img{
+    /* height: 12rem; */
+    margin-right: 1rem;
+}
+.flatbox2-card{
+    width: 25rem;
+}
+.flatbox2-card img{
+    height: auto;
+    width: 10rem;
+}
+.flatbox2-card .img-fluid {
+    max-width:200px;
+    max-height: 200px;
+    
+}
+.wrapper2{
+    max-height: 500px;
+}
+/* footer1 */
+.footer1{
+    background-color: #3A3F42;
+    height: auto;
+    width: auto;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.verLine{
+    width: 100%;
+    height: 2px;
+    background-color: #394C64;
+}
+.footer2{
+    height: auto;
+    width: auto;
+    background-color: #3A3F42;
+}
+.footer3{
+    background-color: #2B2E30;
+    height: auto;
+    width: auto;
+}
+.footer3divs{
+    max-width: 120px;
+    font-size: 14px;
+    
+}
+.footer3divs p:hover{
+    text-decoration: underline;
+}
+.footer3divs a:hover{
+    text-decoration: underline;
+}
+
+ 
+::-webkit-scrollbar {
+    height: 10px;
+    width: 20px;
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 5px; 
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}

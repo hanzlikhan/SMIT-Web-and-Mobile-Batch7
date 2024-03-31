@@ -125,3 +125,6 @@
   .dropdown-menu {
     z-index: 9999;
   }
+  .carousel-item{
+    height: 500px !important;
+  }
