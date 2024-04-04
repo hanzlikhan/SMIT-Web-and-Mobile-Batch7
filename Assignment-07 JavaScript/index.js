@@ -63,7 +63,7 @@
 
 // Write a js program to input any alphabet and check whether it is vowel or
 // consonant.
-// const readlineSync = require('readline-sync');
+const readlineSync = require('readline-sync');
 // var alphabets = readlineSync.question('Enter an alphabet: ').toLowerCase();
 // switch (alphabets) {    
 //     case 'a':
@@ -87,9 +87,20 @@
 
 // Write a js program to check whether a character is uppercase or
 // lowercase alphabet.
-var char = "A";
-if (char === char.toUpperCase()) {
-    console.log("The Character is Upper Case");
-} else {
-    console.log("The Character is Lower Case");
-}
+// var char = "A";
+// if (char === char.toUpperCase()) {
+//     console.log("The Character is Upper Case");
+// } else {
+//     console.log("The Character is Lower Case");
+// }
+
+// Write a js program to input the week number and print weekday.
+// var weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// var num = parseInt(readlineSync.question("Enter Week Number :"));
+// console.log("Day of the Week : ", weeks[num]);
+
+// Write a js program to input the month number and print the number of
+// days in that month.
+var months = [31, 28, 31, 30,  31, 30, 31, 31, 30, 31, 30, 31];
+var mon = parseInt(readlineSync.question("Enter Month Number : "));
+console.log("Number of Days in this Month : ", months[mon - 1])
