@@ -56,16 +56,25 @@
 // }
 
 // 6. Write a JS code to find the no of digits in a number
-function countDigits(number) {
-    let digitCount = 0;
-    while (number !== 0) {
-        number = Math.floor(number / 10);
-        digitCount++;
-    }
-    return digitCount;
-}
+// function countDigits(number) {
+//     let digitCount = 0;
+//     while (number !== 0) {
+//         number = Math.floor(number / 10);
+//         digitCount++;
+//     }
+//     return digitCount;
+// }
+// let number = 12345;
+// let digitCount = countDigits(number);
+// console.log(`Number of digits in ${number}: ${digitCount}`);
 
-// Example usage:
-let number = 12345;
-let digitCount = countDigits(number);
-console.log(`Number of digits in ${number}: ${digitCount}`);
+// 7. Write a JS code to calculate the sum of digits in a number
+function sumOfDigits(num) {
+    let sum = 0;
+    while (num != 0) {
+        sum += num % 10;
+        num = Math.floor(num/10);
+    }
+    return sum;
+}
+console.log("Sum of Digits: " + sumOfDigits(12345));
