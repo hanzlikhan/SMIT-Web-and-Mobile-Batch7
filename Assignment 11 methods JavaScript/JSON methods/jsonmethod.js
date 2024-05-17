@@ -11,9 +11,10 @@ var str = '{"name":[' + '{"first" : "Muhammad","LastN":"hanzla" },'+
             console.log(myJson);
             
 
-            localStorage.setItem("testJSON", myJson);
-            const retrievedJson = localStorage.getItem("testJSON");
-            console.log(retrievedJson);
+            // localStorage.setItem("testJSON", myJson);
+            // const retrievedJson = localStorage.getItem("testJSON");
+            // console.log(retrievedJson);
 
+            
 
             
