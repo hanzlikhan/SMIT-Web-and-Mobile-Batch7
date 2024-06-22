@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="app.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="calculator-grid">
+        <div class="output">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+        </div>
+        <div class="ans-sto">
+            <p id="ans-display">Ans: empty</p>
+            <p>|</p>
+            <p id="sto-display">STO: empty</p>
+        </div>
+
+        <!-- new row -->
+        <div class="span-two" id="toggler">
+            <input type="checkbox" class="toggle" id="check">
+            <label for="check"></label>
+        </div>
+        <button>%</button>
+        <button class="span-two">AC</button>
+        <button>DEL</button>
+        <button>÷</button>
+
+        <!-- new row -->
+        <button>x!</button>
+        <button>ln</button>
+        <button>log</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>&#215;</button>
+
+        <!-- new row -->
+        <button>sin</button>
+        <button>cos</button>
+        <button>tan</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+
+        <!-- new row -->
+        <button>1/x</button>
+        <button>&Sqrt;</button>
+        <button id="y-root-x">
+            <p>y</p>
+            <p>√</p>
+            <p>x</p>
+            <!-- <img src="/images/y-root-x.png" alt="y-root-x-img"> -->
+        </button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>-</button>
+
+        <!-- new row -->
+        <button>e</button>
+        <button id="x2">x<sup>2</sup></button>
+        <button>x<sup>y</sup></button>
+        <button>.</button>
+        <button>0</button>
+        <button class="span-two">=</button>
+
+        <!-- new row -->
+        <button>&pi;</button>
+        <button>Ans</button>
+        <button>STO</button>
+        <button>RCL</button>
+        <button class="hex-num-btn">A</button>
+        <button class="hex-num-btn">B</button>
+        <button class="hex-num-btn">C</button>
+
+
+        <!-- new row -->
+        
+        <button id="record"><p>Use</p>History</button>
+        <div title="History" id="history-ctr" class="span-three">
+            <p>History:</p>
+            <select name="history" id="history">
+                <option value="empty" selected>Empty</option>
+            </select>
+        </div>
+        <button class="hex-num-btn">D</button>
+        <button class="hex-num-btn">E</button>
+        <button class="hex-num-btn">F</button>
+
+
+        <!-- new row -->
+        <div id="conversion-ctr">
+            <select name="conversion-from" class="conversion">
+                <option value="dec" selected>Decimal</option>
+                <option value="bin">Binary</option>
+                <option value="oct">Octal</option>
+                <option value="hex">Hexadecimal</option>
+            </select>
+            <select name="conversion-to" class="conversion">
+                <option value="dec">Decimal</option>
+                <option value="bin" selected>Binary</option>
+                <option value="oct">Octal</option>
+                <option value="hex">Hexadecimal</option>
+            </select>
+            <button class="conversion">Convert</button>
+        </div>
+
+        <div id="water-mark">
+            <a href="https://github.com/mirokrastanov" target="_blank">Created by: Miro Krastanov</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
