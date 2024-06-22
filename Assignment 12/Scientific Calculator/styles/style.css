@@ -1,0 +1,547 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    background: linear-gradient(90deg, rgba(0, 255, 191, 1) 0%, rgba(0, 193, 255, 1) 100%);
+    position: relative;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: baseline;
+    padding-top: 100px;
+    min-height: 100vh;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: minmax(120px, auto) 30px 70px 70px 70px 70px 70px 70px 70px 50px;
+    /* repeat(7, 80px); */
+}
+
+.calculator-grid>button,
+#history-ctr {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(0, 193, 255, 1);
+    color: white;
+}
+
+#history-ctr {
+    display: flex;
+    flex-direction: column;
+}
+
+#history-ctr p {
+    display: block;
+    font-size: 1.2rem;
+    height: 35%;
+    text-align: center;
+}
+
+#history {
+    width: 100%;
+    background-color: rgba(0, 193, 255, 1);
+    color: white;
+    border: none;
+    height: 65%;
+    font-size: 1.5rem;
+}
+
+#record {
+    font-size: 1.5rem;
+}
+
+#record:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#record p {
+    font-size: 20px;
+}
+
+.calculator-grid>button:hover {
+    /* color: black; */
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.span-three {
+    grid-column: span 3;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.7rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.ans-sto>p {
+    display: inline-block;
+}
+
+.ans-sto {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#conversion-ctr {
+    grid-column: 1 / -1;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(0, 193, 255, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conversion-ctr.dark.mode.switch,
+#history-ctr.dark.mode.switch {
+    border: 1px solid black;
+    border-top: none;
+    outline: none;
+}
+
+.conversion,
+option {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 193, 255, 1);
+    color: white;
+    width: 240px;
+    height: 100%;
+}
+
+select.conversion {
+    border-right: 1px solid white;
+}
+
+button.conversion {
+    font-size: 2rem;
+}
+
+.conversion:hover,
+#history:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+
+#water-mark {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    margin: 5px 10px;
+    background-color: bisque;
+    padding: 3px 10px;
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#water-mark a {
+    text-decoration: none;
+    color: black;
+}
+
+#water-mark:hover {
+    cursor: pointer;
+    background-color: rgb(255, 199, 131);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+#y-root-x img {
+    margin-top: 10px;
+    width: 70%;
+    height: 70%;
+}
+
+#y-root-x p:nth-of-type(1) {
+    position: relative;
+    left: -13px;
+    top: 10px;
+    font-size: 20px;
+}
+
+#y-root-x p:nth-of-type(2) {
+    position: relative;
+    top: -3px;
+    left: -10px;
+}
+
+#y-root-x p:nth-of-type(3) {
+    position: relative;
+    top: -43px;
+    left: 10px;
+}
+
+#toggler {
+    background-color: rgba(0, 193, 255, 1);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+input[type="checkbox"].toggle {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+
+input[type="checkbox"].toggle+label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="checkbox"].toggle+label::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'Light';
+    color: white;
+    width: 9em;
+    height: 2.5em;
+    background-color: rgba(0, 193, 255, 1);
+    border: 2px solid white;
+    border-radius: 4em;
+    transition: 300ms ease-in-out;
+}
+
+input[type="checkbox"].toggle+label::after {
+    position: absolute;
+    left: 0.9em;
+    content: '';
+    width: 3.3em;
+    height: 3.3em;
+    background-color: white;
+    border: 2px solid rgba(0, 193, 255, 1);
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+}
+
+input[type="checkbox"].toggle:checked+label::before {
+    background-color: #444547;
+    content: 'Dark';
+    color: black;
+    border: 2px solid black;
+}
+
+input[type="checkbox"].toggle:checked+label::after {
+    transform: translateX(7.2em);
+    background-color: black;
+    border: 2px solid #444547;
+}
+
+.dark.mode.switch {
+    background-color: #444547;
+    border: 1px solid black;
+    color: black;
+}
+
+.dark.mode.switch:hover {
+    /* color: rgba(0, 193, 255, 1); */
+    background-color: rgba(95, 95, 95, 0.918);
+    border: 1px solid black;
+}
+
+.dark.mode.switch#toggler,
+#history-ctr.dark.mode.switch {
+    background-color: #444547;
+    border: 1px solid black;
+    color: black;
+}
+
+#history.dark.mode.switch {
+    background-color: #444547;
+    border: none;
+    color: black;
+}
+
+#history.dark.mode.switch:hover {
+    background-color: rgba(95, 95, 95, 0.918);
+}
+
+#history.dark.mode.switch option {
+    background-color: #444547;
+    color: black;
+}
+
+#toggler:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.dark.mode.switch#toggler:hover {
+    background-color: rgba(95, 95, 95, 0.918);
+}
+
+body.dark.mode.switch {
+    background: #444547;
+    border: none;
+}
+
+body.dark.mode.switch:hover {
+    background: #444547;
+    border: none;
+}
+
+@media all and (max-width: 700px) {
+    body {
+        background: rgba(0, 193, 255, 1);
+    }
+
+    .calculator-grid {
+        padding-top: 20px;
+        grid-template-columns: repeat(7, 70px);
+        grid-template-rows: minmax(120px, auto) 40px 80px 80px 80px 80px 80px 80px 80px 50px;
+    }
+
+    .calculator-grid>button,
+    #history-ctr {
+        font-size: 1.5rem;
+    }
+
+    #y-root-x p:nth-of-type(1) {
+        left: -13px;
+        top: 14px;
+        font-size: 20px;
+    }
+
+    #y-root-x p:nth-of-type(2) {
+        font-size: 2rem;
+        top: 5px;
+        left: -10px;
+    }
+
+    #y-root-x p:nth-of-type(3) {
+        font-size: 2rem;
+        top: -33px;
+        left: 10px;
+    }
+
+    #record {
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    #toggler {
+        height: 80px;
+    }
+
+    input[type="checkbox"].toggle+label::before {
+        width: 7em;
+        height: 2em;
+    }
+
+    input[type="checkbox"].toggle+label::after {
+        left: 0.3em;
+        width: 2.7em;
+        height: 2.7em;
+    }
+
+    input[type="checkbox"].toggle:checked+label::after {
+        transform: translateX(5.4em);
+    }
+
+    #conversion-ctr select.conversion option {
+        font-size: 1.2rem;
+    }
+
+    button.conversion {
+        font-size: 1.5rem;
+    }
+
+    select#history option {
+        font-size: 1.2rem;
+    }
+
+    .output .previous-operand {
+        font-size: 1.4rem;
+    }
+
+    .output .current-operand {
+        font-size: 2.2rem;
+    }
+
+    #water-mark {
+        position: fixed;
+        padding: 0px;
+        margin: 0px auto;
+        height: fit-content;
+        width: fit-content;
+        left: 0px;
+        top: 0px;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    body {
+        background: rgba(0, 193, 255, 1);
+    }
+
+    .calculator-grid {
+        padding-top: 20px;
+        grid-template-columns: repeat(7, 65px);
+        grid-template-rows: minmax(120px, auto) 40px 80px 80px 80px 80px 80px 80px 80px 50px;
+    }
+
+    .calculator-grid>button,
+    #history-ctr {
+        font-size: 1.5rem;
+        padding-left: 0;
+    }
+
+    #history {
+        font-size: 1.2rem;
+    }
+
+    #y-root-x p:nth-of-type(1) {
+        left: -13px;
+        top: 14px;
+        font-size: 18px;
+    }
+
+    #y-root-x p:nth-of-type(2) {
+        font-size: 1.7rem;
+        top: 5px;
+        left: -10px;
+    }
+
+    #y-root-x p:nth-of-type(3) {
+        font-size: 2rem;
+        top: -30px;
+        left: 10px;
+    }
+
+    #record {
+        padding: 0;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    #record p {
+        font-size: 1.5rem;
+    }
+
+    #toggler {
+        height: 80px;
+    }
+
+    input[type="checkbox"].toggle+label::before {
+        width: 5em;
+        height: 1.7em;
+    }
+
+    input[type="checkbox"].toggle+label::after {
+        left: 0.4em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    input[type="checkbox"].toggle:checked+label::after {
+        transform: translateX(4.8em);
+    }
+
+    .conversion,
+    option {
+        font-size: 1.2rem;
+    }
+
+    button.conversion {
+        font-size: 1.2rem;
+    }
+
+    #conversion-ctr select.conversion option {
+        font-size: 0.8rem;
+    }
+
+    select#history option {
+        font-size: 0.8rem;
+    }
+
+    .output .previous-operand {
+        font-size: 1.4rem;
+    }
+
+    .output .current-operand {
+        font-size: 2.2rem;
+    }
+}
+@media all and (max-width: 450px) {
+    .calculator-grid {
+        padding-top: 0px;
+        transform: scale(0.9);
+    }
+}
+@media all and (max-width: 400px) {
+    .calculator-grid {
+        transform: scale(0.75);
+    }
+}
+@media all and (max-width: 350px) {
+    .calculator-grid {
+        transform: scale(0.6);
+    }
+}
+
+@media all and (max-width: 270px) {
+    .calculator-grid {
+        padding-top: 0px;
+        transform: scale(0.5);
+    }
+}
+
+@media all and (max-width: 230px) {
+    .calculator-grid {
+        padding-top: 0px;
+        transform: scale(0.4);
+    }
+
+    #water-mark a {
+        font-size: 0.8rem;
+    }
+}
