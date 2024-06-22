@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id="deg" class="btn trans">DEG</button>
+                <button class="btn trans">F-E</button>
+            </div>
+           
+            <div class="row">
+                <div class="dropdown trans">
+                    <button class="dropbtn trans">Trigonometry</button>
+                    <div class="dropdown-content">
+                    <a id="sin" class="btn" href="#">Sin</a>
+                    <a id="cos" class="btn" href="#">Cos</a>
+                    <a id="tan" class="btn" href="#">Tan</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                  <button class="dropbtn trans">Functions</button>
+                  <div class="dropdown-content">
+                  <a class="btn" href="#">round</a>
+                  <a href="#"class="btn">ceil</a>
+                  <a href="#"class="btn">floor</a>
+                  <a href="#"class="btn">trunc</a>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="scndOp" class="btn">2<sup>nd</sup></button>
+                <button onclick="pi()">&Pi;</button>
+                <button onclick="e()">e</button>
+                <button onclick="screen.value=''; index=0;">C</button>
+                <button id="del" onclick="backspc()">&#x232b;</button>
+            </div><div class="row">
+                <button id="xPow" class="btn">x<sup>2</sup></button>
+                <button onclick="divx()">1/x</button>
+                <button onclick="abs()">|x|</button>
+                <button onclick="exp()">exp</button>
+                <button class="btn">mod</button>
+            </div><div class="row">
+                <button id="root" class="btn"><sup>2</sup>&radic;x</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button onclick="fact()">n!</button>
+                <button class="btn opr">&divide;</button>
+            </div><div class="row">
+                <button class="btn">x<sup>y</sup></button>
+                <button class="btn wb">7</button>
+                <button class="btn wb">8</button>
+                <button class="btn wb">9</button>
+                <button class="btn opr">&times;</button>
+            </div><div class="row">
+                <button id="powX" class="btn">10<sup>x</sup></button>
+                <button class="btn wb">4</button>
+                <button class="btn wb">5</button>
+                <button class="btn wb">6</button>
+                <button class="btn opr">-</button>
+            </div><div class="row">
+                <button id="log" class="btn">log</button>
+                <button class="btn wb">1</button>
+                <button class="btn wb">2</button>
+                <button class="btn wb">3</button>
+                <button class="btn opr">+</button>
+            </div><div class="row">
+                <button id="ln" class="btn">ln</button>
+                <button  class="btn wb nor"><sup>+</sup>/-</button>
+                <button class="btn wb">0</button>
+                <button class="btn wb nor">.</button>
+                <button id="ans" onclick="ans()">=</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
