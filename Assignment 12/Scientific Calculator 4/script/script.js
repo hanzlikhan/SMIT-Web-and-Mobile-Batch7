@@ -333,7 +333,7 @@ document.addEventListener('keydown', e => {
     targetElement && targetElement.click()
 })
 
-button click animation
+// button click animation
 document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('click', () => {
         button.classList.add('click-animation')
