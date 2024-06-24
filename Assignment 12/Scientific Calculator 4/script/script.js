@@ -298,16 +298,16 @@ function equalFunc() {
     })
 }
 
-function removeAns(event) {
-    calculation = [];
-    showOnScreen = [];
-    updateScreen();
-    console.log('remove ans')
-    numBut.forEach(element => {
-        element.removeEventListener('click', removeAns);
-    })
-    numButFunction(event);
-}
+// function removeAns(event) {
+//     calculation = [];
+//     showOnScreen = [];
+//     updateScreen();
+//     console.log('remove ans')
+//     numBut.forEach(element => {
+//         element.removeEventListener('click', removeAns);
+//     })
+//     numButFunction(event);
+// }
 
 function clearExponential() {
     exponentialNum.innerText = '';
