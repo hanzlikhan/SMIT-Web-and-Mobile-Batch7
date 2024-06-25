@@ -297,17 +297,17 @@ function equalFunc() {
         element.addEventListener('click', removeAns);
     })
 }
-
-function removeAns(event) {
-    calculation = [];
-    showOnScreen = [];
-    updateScreen();
-    console.log('remove ans')
-    numBut.forEach(element => {
-        element.removeEventListener('click', removeAns);
-    })
-    numButFunction(event);
-}
+// function to remove answer 
+// function removeAns(event) {
+//     calculation = [];
+//     showOnScreen = [];
+//     updateScreen();
+//     console.log('remove ans')
+//     numBut.forEach(element => {
+//         element.removeEventListener('click', removeAns);
+//     })
+//     numButFunction(event);
+// }
 
 function clearExponential() {
     exponentialNum.innerText = '';
